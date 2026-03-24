@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dead Crow Hats | Grunge Feline Couture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@300;400&display=swap');
+        body { background-color: #121212; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        h1, h2 { font-family: 'Cinzel', serif; letter-spacing: 2px; }
+        .grunge-border { border: 1px solid #2a3d2a; transition: all 0.3s ease; }
+        .grunge-border:hover { border-color: #4a634a; box-shadow: 0 0 15px rgba(74, 99, 74, 0.2); }
+        .buy-button { background-color: #8b0000; transition: transform 0.2s; }
+        .buy-button:hover { background-color: #a00000; transform: scale(1.05); }
+    </style>
+</head>
+<body>
+
+    <header class="py-20 text-center border-b border-zinc-800">
+        <h1 class="text-5xl md:text-7xl mb-4 text-white">DEAD CROW HATS</h1>
+        <p class="text-zinc-500 italic text-lg tracking-widest">Handmade Felt • Tattoo Burnt • Alternative Cat Headwear</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            
+            <div class="grunge-border p-4 bg-zinc-900/50">
+                <div class="aspect-square bg-zinc-800 mb-4 flex items-center justify-center text-zinc-600">FOTO DE SOMBRERO 1</div>
+                <h3 class="text-xl mb-2">The Nightshade</h3>
+                <p class="text-zinc-400 text-sm mb-4">Gothic felt with hand-burnt floral tattoo designs.</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-xl font-bold text-pistachio">45€</span>
+                    <a href="#" class="buy-button text-white px-6 py-2 uppercase text-xs font-bold">Comprar</a>
+                </div>
+            </div>
+
+            <div class="grunge-border p-4 bg-zinc-900/50">
+                <div class="aspect-square bg-zinc-800 mb-4 flex items-center justify-center text-zinc-600">FOTO DE SOMBRERO 2</div>
+                <h3 class="text-xl mb-2">The Outlaw</h3>
+                <p class="text-zinc-400 text-sm mb-4">Western grunge with crow skull burnt imagery.</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-xl font-bold text-pistachio">45€</span>
+                    <a href="#" class="buy-button text-white px-6 py-2 uppercase text-xs font-bold">Comprar</a>
+                </div>
+            </div>
+
+            </div>
+    </main>
+
+    <footer class="py-10 text-center text-zinc-600 border-t border-zinc-800 text-xs tracking-tighter">
+        <p>HECHO A MANO EN ESPAÑA | DEAD CROW HATS © 2026</p>
+    </footer>
+
+</body>
+</html>
