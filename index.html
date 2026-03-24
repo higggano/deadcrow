@@ -3,72 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dead Crow Hats | Grunge Feline Couture</title>
+    <title>Dead Crow Hats | Grunge Couture</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@300;400&display=swap');
         body { background-color: #0a0a0a; color: #d1d1d1; font-family: 'Inter', sans-serif; }
-        h1 { font-family: 'Cinzel', serif; }
-        .grunge-border { border: 1px solid #1a2e1a; transition: all 0.3s ease; }
-        .grunge-border:hover { border-color: #8b0000; box-shadow: 0 0 15px rgba(139, 0, 0, 0.2); }
+        h1 { font-family: 'Cinzel', serif; letter-spacing: 0.2em; }
+        .grunge-border { border: 1px solid #1a2e1a; transition: all 0.3s ease; background: #111; }
+        .grunge-border:hover { border-color: #8b0000; box-shadow: 0 0 20px rgba(139, 0, 0, 0.2); }
         .buy-button { background-color: #8b0000; transition: 0.3s; }
         .buy-button:hover { background-color: #a00000; transform: scale(1.05); }
     </style>
 </head>
 <body>
 
-    <header class="relative h-[70vh] flex items-center justify-center overflow-hidden border-b border-zinc-900">
-        <video autoplay loop muted playsinline class="absolute z-0 w-auto min-w-full min-h-full max-w-none brightness-[0.3] grayscale">
+    <header class="relative h-[70vh] w-full flex items-center justify-center overflow-hidden bg-zinc-950 border-b border-zinc-900">
+        <video autoplay loop muted playsinline class="absolute z-0 w-full h-full object-cover brightness-[0.3] grayscale">
             <source src="hero-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
         </video>
 
         <div class="relative z-10 text-center px-6">
-            <h1 class="text-5xl md:text-8xl mb-2 text-white drop-shadow-2xl uppercase tracking-tighter">DEAD CROW HATS</h1>
-            <p class="text-red-700 uppercase tracking-[0.3em] text-sm font-bold">Hand-Burnt • Western Grunge • Feline Couture</p>
-            <div class="mt-8 h-1 w-24 bg-red-900 mx-auto"></div>
+            <h1 class="text-5xl md:text-8xl mb-4 text-white drop-shadow-2xl">DEAD CROW HATS</h1>
+            <p class="text-red-700 uppercase tracking-[0.4em] text-xs md:text-sm font-bold">Hand-Burnt • Western Grunge • Feline Couture</p>
+            <div class="mt-8 h-px w-32 bg-red-900/50 mx-auto"></div>
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-6 py-20">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <main class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             
-            <div class="grunge-border p-4 bg-zinc-900/50">
-                <img src="hat1.jpg" alt="The Nightshade" class="w-full aspect-square object-cover mb-4 border border-zinc-800 grayscale hover:grayscale-0 transition duration-500">
-                <h3 class="text-xl mb-2 uppercase font-bold">The Nightshade</h3>
-                <p class="text-zinc-500 text-sm mb-4 italic">Gothic felt with hand-burnt floral tattoo designs.</p>
-                <div class="flex justify-between items-center">
+            <div class="grunge-border p-4">
+                <div class="aspect-square bg-zinc-900 mb-6 border border-zinc-800 flex items-center justify-center overflow-hidden">
+                    <img src="hat1.jpg" alt="Hat 1" class="w-full h-full object-cover" onerror="this.style.display='none'">
+                    <span class="text-zinc-700 italic text-xs uppercase tracking-widest">Awaiting Visual...</span>
+                </div>
+                <h3 class="text-xl mb-2 uppercase font-bold tracking-tighter">The Nightshade</h3>
+                <p class="text-zinc-500 text-sm mb-6 italic leading-relaxed">Gothic felt with hand-burnt floral tattoo designs.</p>
+                <div class="flex justify-between items-center border-t border-zinc-800 pt-4">
                     <span class="text-xl font-bold text-[#8eb08e]">45€</span>
-                    <a href="YOUR_STRIPE_LINK_1" class="buy-button text-white px-6 py-2 uppercase text-xs font-bold">Comprar</a>
+                    <a href="#" class="buy-button text-white px-8 py-2 uppercase text-[10px] font-black tracking-widest">Comprar</a>
                 </div>
             </div>
 
-            <div class="grunge-border p-4 bg-zinc-900/50">
-                <img src="hat2.jpg" alt="The Outlaw" class="w-full aspect-square object-cover mb-4 border border-zinc-800 grayscale hover:grayscale-0 transition duration-500">
-                <h3 class="text-xl mb-2 uppercase font-bold">The Outlaw</h3>
-                <p class="text-zinc-500 text-sm mb-4 italic">Western grunge with crow skull burnt imagery.</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-xl font-bold text-[#8eb08e]">45€</span>
-                    <a href="YOUR_STRIPE_LINK_2" class="buy-button text-white px-6 py-2 uppercase text-xs font-bold">Comprar</a>
+            <div class="grunge-border p-4">
+                <div class="aspect-square bg-zinc-900 mb-6 border border-zinc-800 flex items-center justify-center">
+                    <img src="hat2.jpg" class="w-full h-full object-cover" onerror="this.style.display='none'">
+                    <span class="text-zinc-700 italic text-xs uppercase tracking-widest">Awaiting Visual...</span>
                 </div>
-            </div>
-
-            <div class="grunge-border p-4 bg-zinc-900/50">
-                <img src="hat3.jpg" alt="Desert Ghost" class="w-full aspect-square object-cover mb-4 border border-zinc-800 grayscale hover:grayscale-0 transition duration-500">
-                <h3 class="text-xl mb-2 uppercase font-bold">Desert Ghost</h3>
-                <p class="text-zinc-500 text-sm mb-4 italic">Distressed felt with faded ritual burns.</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-xl font-bold text-[#8eb08e]">48€</span>
-                    <a href="YOUR_STRIPE_LINK_3" class="buy-button text-white px-6 py-2 uppercase text-xs font-bold">Comprar</a>
+                <h3 class="text-xl mb-2 uppercase font-bold tracking-tighter">The Outlaw</h3>
+                <p class="text-zinc-500 text-sm mb-6 italic leading-relaxed">Western grunge with crow skull burnt imagery.</p>
+                <div class="flex justify-between items-center border-t border-zinc-800 pt-4">
+                    <span class="text-xl font-bold text-[#8eb08e]">45€</span>
+                    <a href="#" class="buy-button text-white px-8 py-2 uppercase text-[10px] font-black tracking-widest">Comprar</a>
                 </div>
             </div>
 
         </div>
     </main>
-
-    <footer class="py-16 text-center text-zinc-700 border-t border-zinc-900 text-xs tracking-[0.5em] uppercase">
-        <p>Hecho a mano en Tarragona | Dead Crow Hats © 2026</p>
-    </footer>
 
 </body>
 </html>
