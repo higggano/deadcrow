@@ -3,63 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dead Crow Hats | Grunge Couture</title>
+    <title>DEAD CROW | Alt Feline Couture</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@300;400&display=swap');
-        body { background-color: #0a0a0a; color: #d1d1d1; font-family: 'Inter', sans-serif; }
-        h1 { font-family: 'Cinzel', serif; letter-spacing: 0.2em; }
-        .grunge-border { border: 1px solid #1a2e1a; transition: all 0.3s ease; background: #111; }
-        .grunge-border:hover { border-color: #8b0000; box-shadow: 0 0 20px rgba(139, 0, 0, 0.2); }
-        .buy-button { background-color: #8b0000; transition: 0.3s; }
-        .buy-button:hover { background-color: #a00000; transform: scale(1.05); }
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat:wght@300;700&display=swap');
+        
+        body { background-color: #000; color: #fff; font-family: 'Montserrat', sans-serif; }
+        h1, h2, .alt-font { font-family: 'Cinzel Decorative', cursive; }
+        
+        /* Killstar-style thin white borders */
+        .ks-border { border: 1px solid #fff; }
+        .ks-border-b { border-bottom: 1px solid #333; }
+        
+        /* Sharp, aggressive buttons */
+        .ks-btn { 
+            background: #fff; 
+            color: #000; 
+            font-weight: 900; 
+            transition: 0.2s ease-in-out;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .ks-btn:hover { 
+            background: #000; 
+            color: #fff; 
+            border: 1px solid #fff;
+        }
+
+        .product-card img {
+            transition: filter 0.5s ease;
+            filter: grayscale(100%) contrast(120%);
+        }
+        .product-card:hover img {
+            filter: grayscale(0%) contrast(100%);
+        }
     </style>
 </head>
 <body>
 
-    <header class="relative h-[70vh] w-full flex items-center justify-center overflow-hidden bg-zinc-950 border-b border-zinc-900">
-        <video autoplay loop muted playsinline class="absolute z-0 w-full h-full object-cover brightness-[0.3] grayscale">
+    <div class="w-full bg-white text-black text-[10px] py-2 text-center font-bold tracking-[0.3em] uppercase">
+        Free Shipping in Spain on orders over 100€ • Hand-burnt in Tarragona
+    </div>
+
+    <header class="relative h-[80vh] flex items-center justify-center overflow-hidden border-b border-white">
+        <video autoplay loop muted playsinline class="absolute z-0 w-full h-full object-cover opacity-40">
             <source src="hero-video.mp4" type="video/mp4">
         </video>
-
-        <div class="relative z-10 text-center px-6">
-            <h1 class="text-5xl md:text-8xl mb-4 text-white drop-shadow-2xl">DEAD CROW HATS</h1>
-            <p class="text-red-700 uppercase tracking-[0.4em] text-xs md:text-sm font-bold">Hand-Burnt • Western Grunge • Feline Couture</p>
-            <div class="mt-8 h-px w-32 bg-red-900/50 mx-auto"></div>
+        
+        <div class="relative z-10 text-center">
+            <h1 class="text-6xl md:text-9xl mb-4 tracking-tighter uppercase italic">DEAD CROW</h1>
+            <p class="text-sm tracking-[0.8em] font-light">FELINE • OCCULT • GRUNGE</p>
+            <div class="mt-10">
+                <a href="#shop" class="ks-btn px-12 py-4 text-sm">Shop Now</a>
+            </div>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-6 py-20">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+    <main id="shop" class="max-w-[1400px] mx-auto px-4 py-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
             
-            <div class="grunge-border p-4">
-                <div class="aspect-square bg-zinc-900 mb-6 border border-zinc-800 flex items-center justify-center overflow-hidden">
-                    <img src="hat1.jpg" alt="Hat 1" class="w-full h-full object-cover" onerror="this.style.display='none'">
-                    <span class="text-zinc-700 italic text-xs uppercase tracking-widest">Awaiting Visual...</span>
+            <div class="product-card ks-border p-6 bg-black group">
+                <div class="relative overflow-hidden mb-6 aspect-[3/4] bg-zinc-900">
+                    <img src="hat1.jpg" alt="Hat" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/600x800/111/fff?text=DEAD+CROW'">
+                    <div class="absolute top-2 left-2 bg-white text-black text-[9px] px-2 py-1 font-bold italic">NEW</div>
                 </div>
-                <h3 class="text-xl mb-2 uppercase font-bold tracking-tighter">The Nightshade</h3>
-                <p class="text-zinc-500 text-sm mb-6 italic leading-relaxed">Gothic felt with hand-burnt floral tattoo designs.</p>
-                <div class="flex justify-between items-center border-t border-zinc-800 pt-4">
-                    <span class="text-xl font-bold text-[#8eb08e]">45€</span>
-                    <a href="#" class="buy-button text-white px-8 py-2 uppercase text-[10px] font-black tracking-widest">Comprar</a>
+                <div class="text-center">
+                    <h2 class="text-2xl mb-1 uppercase tracking-tighter">The Nightshade</h2>
+                    <p class="text-zinc-500 text-[10px] mb-4 tracking-widest italic uppercase">Tattoo-Burnt Felt Hat</p>
+                    <p class="text-xl font-bold mb-6 italic">45.00€</p>
+                    <a href="LINK_1" class="ks-btn py-3 px-8 block w-full text-xs">Add to Coven</a>
                 </div>
             </div>
 
-            <div class="grunge-border p-4">
-                <div class="aspect-square bg-zinc-900 mb-6 border border-zinc-800 flex items-center justify-center">
-                    <img src="hat2.jpg" class="w-full h-full object-cover" onerror="this.style.display='none'">
-                    <span class="text-zinc-700 italic text-xs uppercase tracking-widest">Awaiting Visual...</span>
+            <div class="product-card ks-border p-6 bg-black group">
+                <div class="relative overflow-hidden mb-6 aspect-[3/4] bg-zinc-900">
+                    <img src="hat2.jpg" alt="Hat" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/600x800/111/fff?text=DEAD+CROW'">
                 </div>
-                <h3 class="text-xl mb-2 uppercase font-bold tracking-tighter">The Outlaw</h3>
-                <p class="text-zinc-500 text-sm mb-6 italic leading-relaxed">Western grunge with crow skull burnt imagery.</p>
-                <div class="flex justify-between items-center border-t border-zinc-800 pt-4">
-                    <span class="text-xl font-bold text-[#8eb08e]">45€</span>
-                    <a href="#" class="buy-button text-white px-8 py-2 uppercase text-[10px] font-black tracking-widest">Comprar</a>
+                <div class="text-center">
+                    <h2 class="text-2xl mb-1 uppercase tracking-tighter">The Outlaw</h2>
+                    <p class="text-zinc-500 text-[10px] mb-4 tracking-widest italic uppercase">Western Grunge Finish</p>
+                    <p class="text-xl font-bold mb-6 italic">45.00€</p>
+                    <a href="LINK_2" class="ks-btn py-3 px-8 block w-full text-xs">Add to Coven</a>
+                </div>
+            </div>
+
+            <div class="product-card ks-border p-6 bg-black group">
+                <div class="relative overflow-hidden mb-6 aspect-[3/4] bg-zinc-900">
+                    <img src="hat3.jpg" alt="Hat" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/600x800/111/fff?text=DEAD+CROW'">
+                </div>
+                <div class="text-center">
+                    <h2 class="text-2xl mb-1 uppercase tracking-tighter">Desert Ghost</h2>
+                    <p class="text-zinc-500 text-[10px] mb-4 tracking-widest italic uppercase">Limited Edition Burn</p>
+                    <p class="text-xl font-bold mb-6 italic">48.00€</p>
+                    <a href="LINK_3" class="ks-btn py-3 px-8 block w-full text-xs">Add to Coven</a>
                 </div>
             </div>
 
         </div>
     </main>
+
+    <footer class="py-20 border-t ks-border text-center bg-white text-black">
+        <h2 class="text-4xl mb-6 italic">JOIN THE COVEN</h2>
+        <p class="text-xs tracking-widest mb-10">@DEADCROWHATS</p>
+        <div class="text-[9px] tracking-[0.4em] opacity-50 uppercase">
+            Handmade in Spain • No Gods No Masters
+        </div>
+    </footer>
 
 </body>
 </html>
